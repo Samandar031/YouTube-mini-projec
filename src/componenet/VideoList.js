@@ -20,7 +20,7 @@ class VideoList extends React.Component {
   renderList = () => {
     return this.props.data?.data?.items.map((val) => {
       return (
-        <div className="seachCard" style={{ display: "flex", margin: "20px" }}>
+        <div className="seachCard" style={{ display: "flex", margin: "30px" }}>
           <div key={val.id.videoId}>
             <img src={val.snippet.thumbnails.medium.url} alt="youtube video" />
           </div>
@@ -44,7 +44,13 @@ class VideoList extends React.Component {
 
   render() {
     return (
-      <div style={{ textAlign: "center", border: "2px solid red" }}>
+      <div
+        style={{
+          textAlign: "center",
+          border: "1px solid grey",
+          margin: "20px",
+        }}
+      >
         {this.renderList()}
       </div>
     );

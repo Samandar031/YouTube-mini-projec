@@ -18,7 +18,7 @@ class SearchBar extends React.Component {
 
   render() {
     return (
-      <div style={{ border: "2px solid blue" }}>
+      <div>
         <form
           onSubmit={this.onSumbimForm}
           className="ui category search container"

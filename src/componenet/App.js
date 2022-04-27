@@ -32,8 +32,10 @@ class App extends React.Component {
     return (
       <div>
         <SearchBar getRequestYou={this.getDataYou} />
-        <MenuBar />
-        <VideoList data={this.state.videlist} />
+        <div style={{ display: "flex" }}>
+          <MenuBar />
+          <VideoList data={this.state.videlist} />
+        </div>
       </div>
     );
   }
