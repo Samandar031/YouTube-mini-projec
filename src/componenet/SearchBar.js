@@ -28,7 +28,7 @@ class SearchBar extends React.Component {
             style={{
               display: "flex",
               justifyContent: "center",
-              marginTop: "30px",
+              marginTop: "31px",
             }}
           >
             <input
